@@ -6,7 +6,7 @@
   "scripts": {
     "build:css": "npx tailwindcss -o style.css",
     "build:html": "node ./src/compile_index.js > index.html",
-    "build:production": "node ./src/compile_index.js > index.html && NODE_ENV=production npx tailwindcss -o style.css"
+    "build:production": "node ./src/compile_index.js > index.html && NODE_ENV=production npx tailwindcss -o style.css --minify"
   },
   "author": "",
   "license": "ISC",
